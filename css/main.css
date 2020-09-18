@@ -29,10 +29,10 @@ input {
   margin-right: 25px;
 }
 .btn-primary {
-  border: 1px solid #ff873f;
+  border: 1px solid #F65F34;
   padding:15px;
   border-radius: 7px;
-  background: #ff873f;
+  background: #F65F34;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #999;
