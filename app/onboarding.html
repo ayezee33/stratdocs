@@ -268,51 +268,102 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid">
-          <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800">Annual Strategic Plan</h1>
-            <div class="row">
-              <div class="col-lg-5 col-sm-12">
-                <div class="card shadow mb-4">
-                  <div class="card-header py-3">
-                    <div class="card-body">
-                      <span class="badge badge-pill badge-secondary">Status: Draft</span>
-                      <span class="badge badge-pill badge-secondary">Due Date: 10/1</span>
-                      <span class="badge badge-pill badge-secondary">Owner: Tom</span>
-                      <h3 class="mt-5">Core Focus</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <h3>Core Values?</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <h3>Vision</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <h3>10 Year Targets</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <h3>Sales & Marketing Strategy?</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <h3>Product Strategy</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <h3>Support Strategy</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="h-100 d-flex justify-content-center">
+          <div class="row justify-content-center">
+            <div class="col-6">
+              <!-- Modal -->
+              <div class="modal fade" id="onboardingModal" tabindex="-1" role="dialog" aria-labelledby="onboardingModal" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="onboardingModal">Let's Get You Started</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <!--Settings & Options-->
-              <div class="col-lg-6 col-sm-12">
-                <div class="card shadow mb-4">
-                  <div class="card-header py-3">
-                    <h3>Helpers</h3>
-                    <div class="card-body">
-                      <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 15rem;" src="../img/sync-docs.svg" alt="">
-                      <p><a class="btn btn-success" href="#">Insert framework or model</a></p>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label>How many leaders are in your org?</label>
+                          <div>
+                            <div class="form-check">
+                              <input name="leaders" id="leaders_0" type="radio" class="form-check-input" value="solo">
+                              <label for="leaders_0" class="form-check-label">Just me</label>
+                            </div>
+                            <div class="form-check">
+                              <input name="leaders" id="leaders_1" type="radio" class="form-check-input" value="small">
+                              <label for="leaders_1" class="form-check-label">2-3</label>
+                            </div>
+                            <div class="form-check">
+                              <input name="leaders" id="leaders_2" type="radio" class="form-check-input" value="medium">
+                              <label for="leaders_2" class="form-check-label">3-5</label>
+                            </div>
+                            <div class="form-check">
+                              <input name="leaders" id="leaders_3" type="radio" class="form-check-input" value="large">
+                              <label for="leaders_3" class="form-check-label">5+</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label>Do you currently have a strategic planning process?</label>
+                          <div>
+                            <div class="form-check">
+                              <input name="process" id="process_0" type="radio" class="form-check-input" value="yes">
+                              <label for="process_0" class="form-check-label">Yes</label>
+                            </div>
+                            <div class="form-check">
+                              <input name="process" id="process_1" type="radio" class="form-check-input" value="no">
+                              <label for="process_1" class="form-check-label">No</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label>How often do you currently do strategic planning</label>
+                          <div>
+                            <div class="form-check">
+                              <input name="interval" id="interval_0" type="checkbox" aria-describedby="intervalHelpBlock" class="form-check-input" value="never">
+                              <label for="interval_0" class="form-check-label">Never</label>
+                            </div>
+                            <div class="form-check">
+                              <input name="interval" id="interval_1" type="checkbox" aria-describedby="intervalHelpBlock" class="form-check-input" value="annual">
+                              <label for="interval_1" class="form-check-label">Annually</label>
+                            </div>
+                            <div class="form-check">
+                              <input name="interval" id="interval_2" type="checkbox" aria-describedby="intervalHelpBlock" class="form-check-input" value="quarterly">
+                              <label for="interval_2" class="form-check-label">Quarterly</label>
+                            </div>
+                            <div class="form-check">
+                              <input name="interval" id="interval_3" type="checkbox" aria-describedby="intervalHelpBlock" class="form-check-input" value="monthly">
+                              <label for="interval_3" class="form-check-label">Monthly</label>
+                            </div>
+                            <span id="intervalHelpBlock" class="form-text text-muted">Check all that apply</span>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label>Do you use OKRs?</label>
+                          <div>
+                            <div class="form-check">
+                              <input name="okrs" id="okrs_0" type="radio" class="form-check-input" value="yes">
+                              <label for="okrs_0" class="form-check-label">Yes</label>
+                            </div>
+                            <div class="form-check">
+                              <input name="okrs" id="okrs_1" type="radio" class="form-check-input" value="no">
+                              <label for="okrs_1" class="form-check-label">No</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <a href="/index.html"><button name="submit" type="submit" class="btn btn-primary">Get Started</button></a>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
         <!-- /.container-fluid -->
-
       </div>
       <!-- End of Main Content -->
 
@@ -336,6 +387,7 @@
   <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
   </a>
+
   <!-- Logout Modal-->
   <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -364,6 +416,11 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+  <script type="text/javascript">
+      $(window).on('load',function(){
+          $('#onboardingModal').modal('show');
+      });
+  </script>
 
 </body>
 
